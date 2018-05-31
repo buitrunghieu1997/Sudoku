@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_bg2">
+
+        <com.example.latrodectus.sudoku.view.grid.SudokuGridView
+            android:id="@+id/sudokuGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="#44000000"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@drawable/selector"
+            android:numColumns="9"
+            android:verticalSpacing="0dp" />
+
+        <com.example.latrodectus.sudoku.view.button.SudokuButtonView
+            android:id="@+id/sudokuButtonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sudokuGridView"
+            android:layout_marginTop="10dp"
+            android:listSelector="@drawable/selector"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
